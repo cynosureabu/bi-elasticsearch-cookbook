@@ -1,5 +1,5 @@
 # Encoding: utf-8
-name             'elasticsearch_bi'
+name             'bi-elasticsearch'
 maintainer       'Chen Wang'
 maintainer_email 'chen@obostinsider.com'
 license          'Apache 2.0'
