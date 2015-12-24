@@ -25,10 +25,6 @@ elasticsearch_plugin 'head' do
   notifies :restart, 'elasticsearch_service[elasticsearch]', :delayed
 end
 
-elasticsearch_plugin 'shield' do
-  action :install
-end
-
 elasticsearch_plugin 'cloud-aws' do
   action :install
   notifies :restart, 'elasticsearch_service[elasticsearch]', :delayed
