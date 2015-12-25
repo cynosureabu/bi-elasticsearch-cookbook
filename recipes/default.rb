@@ -12,12 +12,12 @@ elasticsearch_configure 'elasticsearch' do
   configuration ({
     'cluster.name' => 'bi-es',
     'discovery.type' => 'ec2',
-    'network.host'=>'10.0.3.173',
-    'discovery.ec2.groups'=>'sg-1abef17e',
+    'network.host' =>'10.0.3.173',
+    'discovery.ec2.groups' => 'sg-1abef17e',
     'discovery.zen.ping.multicast.enabled' => false ,
     'discovery.zen.minimum_master_nodes' => 1, 
     'discovery.zen.ping.unicast.hosts' => ['10.0.3.173', '10.0.3.172']
-    'cloud.aws.region'=> 'us-west'
+    'cloud.aws.region' => 'us-west'
   })
 
   action :manage
