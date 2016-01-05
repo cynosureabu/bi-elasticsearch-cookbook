@@ -16,7 +16,7 @@ elasticsearch_configure 'elasticsearch' do
     'discovery.ec2.groups' => 'sg-1abef17e',
     'discovery.zen.ping.multicast.enabled' => false,
     'discovery.zen.minimum_master_nodes' => 1, 
-    'discovery.zen.ping.unicast.hosts' => ['10.0.3.173', '10.0.3.172']
+    'discovery.zen.ping.unicast.hosts' => ['10.0.3.173', '10.0.3.172'],
     'cloud.aws.region' => 'us-west'
   })
 
