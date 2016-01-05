@@ -11,8 +11,9 @@ end
 elasticsearch_configure 'elasticsearch' do
   configuration ({
     'cluster.name' => 'bi-es',
+    'node.name' => ${HOSTNAME},
     'discovery.type' => 'ec2',
-    'network.host' =>'10.0.3.173',
+    'network.host' => _ec2_,
     'discovery.ec2.groups' => 'sg-1abef17e',
     'discovery.zen.ping.multicast.enabled' => false,
     'discovery.zen.minimum_master_nodes' => 1, 
