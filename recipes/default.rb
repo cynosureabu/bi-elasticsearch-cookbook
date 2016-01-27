@@ -12,6 +12,8 @@ elasticsearch_configure 'elasticsearch' do
   configuration ({
     'cluster.name' => 'bi-es',
     'node.name' => ${HOSTNAME},
+    'path.data' => '/var/data/elasticsearch',
+    'path.logs' => '/var/log/elasticsearch',
     'discovery.type' => 'ec2',
     'network.host' => _ec2_,
     'discovery.ec2.groups' => 'sg-1abef17e',
